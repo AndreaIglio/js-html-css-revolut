@@ -18,7 +18,7 @@ $(function () {
 
   // Variabili con valore
 
-  var features = $(".features");
+  var features = $(".card_hover_features, .features");
   var features_menu = $(".features_menu .card_hover");
 
   var plans = $(".plans, .plans_menu > div ");
@@ -35,7 +35,7 @@ $(function () {
   // Functions
 
   //FEATURES Menu
-  $(".card_hover_features, .features").hover(
+  features.hover(
     //this function will work on handlerIn
     function () {
       features_menu.removeClass("none");
