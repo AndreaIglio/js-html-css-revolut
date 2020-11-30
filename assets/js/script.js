@@ -19,8 +19,35 @@ $(function () {
   
   // Variabili con valore
 
+  var features = $('.features');
+  var plans = $('.plans');
+  var aboutUs = $('.about_us');
+  var help = $(".help");
+
   // Variabili senza valore
   
+
+
+
+
   // Functions
+
+  $('.plans').hover(
+    function () {
+     
+     $(".plans_menu > div").removeClass('none');
+     $('.plans_menu > div').addClass('active');
+    },
+
+    function () {
+       $(".plans_menu > div").removeClass("active");
+       $(".plans_menu > div").addClass("none");
+      }
+    
+    )
+
+
+
+
 
 });

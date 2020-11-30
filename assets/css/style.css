@@ -29,7 +29,11 @@ a:hover {
 }
 
 .active {
-  display: block;
+  display: flex;
+}
+
+.none {
+  display: none;
 }
 /* /utility class */
 
@@ -118,15 +122,36 @@ justify-content: flex-end;
 }
 
 .hover_menu {
-  width: 50%;
+  width: 60%;
 }
 
-.hover_menu > div {
-  width: 15%;
+
+
+.features_menu {
+  width: 29%;
 }
+
+.hover_menu > div:not(:first-child) {
+  width: 12.5%;
+}
+
+
+
+.card_hover_features {
+  width: 800px;
+}
+
+.card_hover_features > .card_hover > div > * {
+  padding: 15px 0;
+}
+
+
+.card_hover_features > .card_hover > div > span{
+  color: lightgrey;
+}
+
 
 .card_hover {
-  height: ;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px,
   rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
