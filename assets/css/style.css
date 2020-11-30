@@ -10,7 +10,7 @@ body {
 
 a {
   text-decoration: none;
-  color: lightgrey;
+  color: grey;
 }
 
 a:hover {
@@ -27,6 +27,10 @@ a:hover {
 .column {
   flex-direction: column;
 }
+
+.active {
+  display: block;
+}
 /* /utility class */
 
 /* main */
@@ -41,10 +45,15 @@ a:hover {
 
 /* header */
 
+header {
+  height: 10%;
+}
+
 .navbar {
-  height: 15%;
+  height: 100%;
   width: 100%;
-  align-items: center;
+  align-items: flex-end;
+  margin-bottom: 0;
 }
 
 
@@ -54,6 +63,8 @@ a:hover {
   align-items: center;
 } 
 
+/* navbar left */
+
 .navbar_left > div {
   width: 15%;
   height: 100%;
@@ -62,6 +73,9 @@ a:hover {
   align-items: center;
  
 }
+/* /navbar left */
+
+/* navbar right */
 
 .navbar_right > div {
   width: 15%;
@@ -93,6 +107,41 @@ border: 1px solid transparent;
 button:hover {
   filter: contrast(80%);
 }
+
+/* /navbar right */
+
+/* navbar_hover_menu */
+
+.navbar_hover_menu {
+width: 100%;
+justify-content: flex-end;
+}
+
+.hover_menu {
+  width: 50%;
+}
+
+.hover_menu > div {
+  width: 15%;
+}
+
+.card_hover {
+  height: ;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px,
+  rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+  border-radius: 10px;
+  width: 150%;
+  justify-content: space-between;
+  padding: 20px 15px;
+  font-size: 16px;
+}
+
+.card_hover > a {
+  padding: 10px 0;
+}
+
+/* /navbar_hover_menu */
 
 
 /* /header */
