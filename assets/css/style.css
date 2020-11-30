@@ -50,7 +50,7 @@ a:hover {
 /* header */
 
 header {
-  height: 10%;
+  height: 15%;
 }
 
 .navbar {
@@ -63,7 +63,7 @@ header {
 
 .navbar > div {
   width: 50%;
-  height: 50%;
+  height: 80%;
   align-items: center;
 } 
 
@@ -164,6 +164,18 @@ justify-content: flex-end;
 
 .card_hover > a {
   padding: 10px 0;
+}
+
+.about_us_menu, .help{
+  z-index: 1;
+}
+
+.plans_menu {
+  z-index: 3;
+}
+
+.card_hover_features .card_hover {
+  z-index: 4;
 }
 
 /* /navbar_hover_menu */
